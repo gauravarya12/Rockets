@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    font-family: 'McLaren';
+}
+.main {
+    display: flex;
+    flex-flow: column wrap;
+}
+.rocket_bg {
+    background: no-repeat url('resources/rocket_background.jpg') fixed;
+    width: 90%;
+    padding: 2% 5% 5% 5%;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+.rocket_bg > h1 {
+    font-size: 50px;
+}
+.toc {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+.toc a {
+    font-size: 20px;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+
+}
+.rocket_bg ~ div {
+    width: 90%;
+    padding: 2.5% 5% 2.5% 5%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+#history {
+    background-color: #263238;
+    color: white;
+}
+.zero_margin {
+    margin: 0px;
+}
+.gapbar{
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+#types {
+    background-color: #7E57C2;
+}
+#design {
+    background-color: #1565C0;
+}
+#design h2 {
+    margin: 0px 0px 5px 0px;
+}
+#design p {
+    margin: 5px 0px 5px 0px;
+}
+.engine {
+    display: flex;
+    flex-flow: row wrap;
+}
+.engine p {
+    width: 86%;
+}
+.engine img {
+    width: 150px;
+    height: 275px;
+    margin-right: 20px;
+}
+.propellant {
+    display: flex;
+    flex-flow: row wrap;
+}
+.propellant p {
+    width: 75%;
+}
+.propellant img {
+    width: 250px;
+    height: 275px;
+    margin-right: 20px;
+}
+#uses {
+    background-color: #795548;
+}
+.military {
+    display: flex;
+    flex-flow: row wrap;
+}
+.military img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+.military p {
+    width: 80%;
+}
+.spaceflight {
+    display: flex;
+    flex-flow: row wrap;
+}
+.spaceflight img {
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+}
+.spaceflight p {
+    width: 75%;
+}
+
+@media (max-width: 650px) {
+    .main {
+        align-items: center;
+    }
+    .rocket_bg {
+        background: #00B8D4;
+    }
+    .toc {
+        align-items: center;
+    }
+    .toc a {
+        font-size: 15px;
+    }
+    .rocket_bg ~ div {
+        align-items: center;
+    }
+    .engine {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .propellant {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .military {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .spaceflight {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    p {
+        font-size: 12px;
+        width: 100%;
+    }
+    .main h1 {
+        font-size: 30px;
+    }
+    li {
+        font-size: 12px;
+    }
+}
